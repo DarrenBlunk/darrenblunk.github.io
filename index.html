@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <style type="text/css">
+            #circle1 {
+               background-color: red;
+            }
+            
+            #circle2 {
+               background-color: blue;
+            }
+            
+            #circle3 {
+               background-color: green;
+            }
+            .circle{
+                position: relative;
+                top: 200px;
+                left: 350px;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                float: left;
+                margin-right: 20px
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+   <div id="circle1" class="circle"></div>
+   <div id="circle2" class="circle"></div>
+   <div id="circle3" class="circle"></div>
+   <script type="text/javascript">
+      document.getElementById("circle1").onclick = function(){
+          if(document.getElementById("circle1").style.backgroundColor === "red")
+            document.getElementById("circle1").style.backgroundColor = "yellow"
+          else
+              document.getElementById("circle1").style.backgroundColor = "red";
+
+      }
+      
+      document.getElementById("circle2").onclick = function(){
+            document.getElementById("circle2").style.display="none";
+
+      }
+      
+      document.getElementById("circle3").onclick = function(){
+            document.getElementById("circle3").style.display="none";
+
+      }
+        </script>
+    </body>
+</html>
