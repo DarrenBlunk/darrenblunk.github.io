@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Code Player</title>
+    <link rel="stylesheet" type="text/css" href="jQueryStyle.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+   
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">Code Player</div>
+        <div id="buttonContainer">
+            <div class="toggleButton normal" id="html">HTML</div>
+            <div class="toggleButton normal" id="css">CSS</div>
+            <div class="toggleButton normal" id="js">script</div>
+            <div class="toggleButton normal" id="output">Output</div>
+        </div>
+        <button id="runCode">Run</button>
+    </div>
+
+    <div id="TextEditor">
+        <span class="PanelName" id="htmlPanelName" >HTML</span>
+        <span class="PanelName" id="cssPanelName">CSS</span>
+        <span class="PanelName" id="jsPanelName">JavaScript</span>
+        <span class="PanelName" id="outputPanelName">Output</span>
+
+        <textarea id="htmlPanel" class="editor" spellcheck="false"></textarea>
+        <textarea id="cssPanel" class="editor" spellcheck="false"></textarea>
+        <textarea id="jsPanel" class="editor" spellcheck="false"></textarea>
+        <iframe id="outputPanel" class="editor"></iframe>
+    </div>
+    <script type="text/javascript" src="jQueryScript.js"></script>
+</body>
+
+</html>
