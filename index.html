@@ -1,118 +1,125 @@
 <!doctype html>
 <html>
     <head>
-        <title>Reaction Testor</title>
+    <title>Reaction Testor</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style type="text/css">
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
         
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        #gameWindow {
+            border-style: double;
+            height: 490px;
+        }
         
-        <style type="text/css">  
-            body {
-                font-family: 'Raleway', sans-serif;
-            }
-            #gameWindow {
-                border-style: double;
-                height: 490px;
-            }
-            
-            #cObject {
-                position: relative;
-            }
-            
-             a {
-                text-decoration: none;
-                float: right;
-                font-size: 20px;
-                color: black;
-                margin-right: 50px;
-            }
-            
-        </style>
-    </head>
-    <body>
-      <a href="Buttons.html">Buttons Preview</a>
-      <h1>Test Your Reaction!</h1>
-       <p>Click on the boxed and circles as quickly as you can!</p>
-       <p><b id="timeGUI">Time taken to respond : 0.00</b></p>
-       <section id="gameWindow">
-              <div id="cObject"></div>
-         </section>
-         <embed src="mysterious.mp3" autostart="true" loop="true" hidden="true">   
-        <script type="text/javascript">
-            
-            //Variables
-            var size;
-            var shape;
-            var color;
-            var posX;
-            var posY;
-            var date;
-            
-            //initilize
-            var cWindow = document.getElementById("gameWindow"); 
-            var cObject = document.getElementById("cObject");
-            var timeText = document.getElementById("timeGUI");
-            var datePre = new Date().getTime();
-            
-            //Start function
-                cRefreshScreen();
-            //Methods
-            function randomRange(min,max){
-                return min + Math.floor(Math.random() * ((max - min)+1));
-            }
-            
-            cObject.onclick = delay;
-                
-            function delay(){
-                cObject.style.display = "none";
-                setTimeout(cRefreshScreen,randomRange(0,1000));
-            }
-            function cRefreshScreen()
-            {
+        #cObject {
+            position: relative;
+        }
+        
+        a {
+            background-color: #FF217B;
+            padding: 10px 20px;
+            border: 3px solid #EC007C;
+            text-decoration: none;
+            float: right;
+            font-size: 20px;
+            color: ghostwhite;
+            border-radius: 30px;;
+            margin-right: 50px;
+        }
+        
+        a:hover {
+            background-color: #FE5E78;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="Buttons.html">Buttons Preview</a>
+    <div>
+        <p><a href="bootstrap.html"> Bootstraped Page</a></p>
+    </div>
+    <h1>Test Your Reaction!</h1>
+    <p>Click on the boxed and circles as quickly as you can!</p>
+    <p><b id="timeGUI">Time taken to respond : 0.00</b></p>
+    <section id="gameWindow">
+        <div id="cObject"></div>
+    </section>
+    <embed src="mysterious.mp3" autostart="true" loop="true" hidden="true">
+    <script type="text/javascript">
+        //Variables
+        var size;
+        var shape;
+        var color;
+        var posX;
+        var posY;
+        var date;
+
+        //initilize
+        var cWindow = document.getElementById("gameWindow");
+        var cObject = document.getElementById("cObject");
+        var timeText = document.getElementById("timeGUI");
+        var datePre = new Date().getTime();
+
+        //Start function
+        cRefreshScreen();
+        //Methods
+        function randomRange(min, max) {
+            return min + Math.floor(Math.random() * ((max - min) + 1));
+        }
+
+        cObject.onclick = delay;
+
+        function delay() {
+            cObject.style.display = "none";
+            setTimeout(cRefreshScreen, randomRange(0, 1000));
+        }
+
+        function cRefreshScreen() {
             cObject.style.display = "block";
 
-                //Shape randomizer
+            //Shape randomizer
             shape = Math.floor(Math.random() * 2);
-  
+
             //Size randomizer
-            size = randomRange(50,350);
-            
+            size = randomRange(50, 350);
+
             //Color randomizer
-            color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-            
+            color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+
             //Position randomizer
-            posX = randomRange(0,1320 - size);
-            posY = randomRange(0,480 - size);
-            
+            posX = randomRange(0, 1320 - size);
+            posY = randomRange(0, 480 - size);
+
             //Shape Change
-            if(shape == 0)
-            cObject.style.borderRadius = "50%";
+            if (shape == 0)
+                cObject.style.borderRadius = "50%";
             else
-            cObject.style.borderRadius = "0px";
+                cObject.style.borderRadius = "0px";
 
             //Size Change
-            cObject.style.height = size +"px";
-            cObject.style.width = size +"px";
+            cObject.style.height = size + "px";
+            cObject.style.width = size + "px";
 
             //Color Change
             cObject.style.backgroundColor = color;
-            
+
             //Position Change
-            document.getElementById("cObject").style.left = posX+"px";
-            document.getElementById("cObject").style.top = posY+"px";
-                
-             //Current time   
-             date = new Date().getTime();
-                
+            document.getElementById("cObject").style.left = posX + "px";
+            document.getElementById("cObject").style.top = posY + "px";
+
+            //Current time   
+            date = new Date().getTime();
+
             //Showing time taken to respond
-            timeText.innerHTML  = "Time taken to respond :" + ((date - datePre) /1000) + " Seconds";
+            timeText.innerHTML = "Time taken to respond :" + ((date - datePre) / 1000) + " Seconds";
 
             //Last Click Time
             datePre = new Date().getTime();
-            }
-            
-            
-                
-            
-        </script>
-    </body>
+        }
+    </script>
+</body>
 </html>
