@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="Plugins/bootstrap-4/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    
+
     <style type="text/css">
         .jumbotron {
             background-image: url(resource/backgroundtwo.jpg);
@@ -34,6 +34,15 @@
             color: white;
         }
 
+        #second-section {
+            padding: 30px 0px;
+        }
+
+        @media screen and (max-width: 990px) {
+            .card {
+                margin: 20px 0px;
+            }
+        }
     </style>
 </head>
 
@@ -84,7 +93,7 @@
     </div>
 
     <div class="container-fluid bg-faded">
-        <div class="text-center p-sm-4">
+        <div class="text-center p-sm-4" id="second-section">
             <h1>Montos Studios</h1>
             <p class="lead">The Call confirmer is made by us. Montos Studios</p>
         </div>
@@ -164,18 +173,18 @@
     <script src="Plugins/jquery.min.js"></script>
     <script src="Plugins/tether.min.js"></script>
     <script src="Plugins/bootstrap-4/js/bootstrap.min.js"></script>-->
-    
+
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript">
         //$("#card-deck").
-        
 
-        
+
+
         $(window).resize(function() {
-            
-            if ($(window).width() < 990 ) {
+
+            if ($(window).width() < 990) {
                 $("#card-deck").removeClass("card-deck");
 
             } else {
@@ -184,7 +193,6 @@
             }
 
         });
-
     </script>
 </body>
 
