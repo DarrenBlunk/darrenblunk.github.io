@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        body {
+            background-color: #313131;
+            font-family: ubuntu;
+            margin: 0;
+            padding: 0;
+        }
+        
+        button:hover {
+            background-color: #6e7376;
+            transition: 0.3s;
+        }
+        
+        #title {
+            background-color: #3e3e42;
+            margin-top: 40px;
+            padding: 20px 0px;
+            font-size: 50px;
+            text-align: center;
+            border: 20px solid #333333;
+            opacity: .9;
+            box-shadow: 0px 10px 94px -4px rgba(0, 0, 0, 0.3);
+            color: #ffb400;
+            border-left-width: 0px;
+            border-right-width: 0px;
+        }
+        
+        #watch-container {
+            margin: 0px auto;
+            margin-top: 120px;
+            width: 60%;
+            height: 200px;
+            background-color: #3e3e42;
+            border-radius: 6px;
+            box-shadow: 0px 10px 94px -4px rgba(0, 0, 0, 0.4);
+            border: 10px solid #333333;
+        }
+        
+        .centrified {
+            width: 578px;
+            margin: 50px auto;
+        }
+        
+        .text {
+            font-size: 80px;
+            color: #ffb400;
+        }
+        
+        #button-container {
+            width: 650px;
+            margin: 0 auto;
+        }
+        
+        button {
+            width: 150px;
+            padding: 14px;
+            margin: 30px;
+            margin-top: 60px;
+            background-color: #3e3e42;
+            border: none;
+            color: #ffb400;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 50px;
+            ;
+            box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.4);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Stop Watch</h1>
+    <div id="watch-container">
+        <!--<div id="hour" class="block"></div>
+        <div id="minute" class="block"></div>
+        <div id="second" class="block"></div>
+        <div id="millisecond" class="block"></div>-->
+        <div class="centrified">
+            <div class="text" id="stopWatch">00 : 00 : 00 : 000</div>
+        </div>
+    </div>
+    <div id="button-container">
+        <button id="Start" onclick="Start()">Start</button>
+        <button id="Pause" onclick="pause()">Pause</button>
+        <button id="Reset" onclick="reset()">Reset</button>
+    </div>
+</body>
+<script>
+    //Gobal Variables
+    //Added 'my' just to add a bit of uniqueness to them. so that there woulndn't be any name conflict with libs or javascript itself.
+    var myTime = document.getElementById("stopWatch"),
+        myMilliSeconds = 0,
+        mySeconds = 0,
+        myMinutes = 0,
+        myHours = 0,
+        myUpdateController = 0,
+        myPlaying = false,
+        myPaused = false,
+        lastFrame = Date.now();
+
+
+
+
+
+
+
+    //Start and Stop Button onclick function 
+    function Start() {
+        if (!myPlaying) {
+            //Runs when 'Start' button is clicked
+            lastFrame = Date.now();
+            myUpdateController = setInterval(update, 100);
+            myPlaying = true;
+            document.getElementById("Start").innerHTML = "Stop";
+
+        } else {
+            //Runs when 'Stop' button is clicked
+            clearInterval(myUpdateController);
+            document.getElementById("Start").innerHTML = "Start";
+            myMilliSeconds = 0;
+            mySeconds = 0;
+            myMinutes = 0;
+            myHours = 0;
+
+            myPlaying = false;
+            myPaused = false;
+            document.getElementById("Pause").innerHTML = "Pause";
+
+
+        }
+
+    }
+
+    function pause() {
+        if (!myPaused && myPlaying) {
+            //Runs when 'Pause' button is clicked
+            clearInterval(myUpdateController);
+            myPaused = true;
+            document.getElementById("Pause").innerHTML = "Resume";
+        } else if (myPlaying) {
+            //Runs when 'Resume' button is clicked
+            lastFrame = Date.now();
+            myUpdateController = setInterval(update, 100);
+            myPaused = false;
+            document.getElementById("Pause").innerHTML = "Pause";
+        }
+    }
+
+    //Used to reset the timer
+    function reset() {
+        if (myPlaying) {
+            myMilliSeconds = 0;
+            mySeconds = 0;
+            myMinutes = 0;
+            myHours = 0;
+
+            if (myPaused) {
+                document.getElementById("Pause").innerHTML = "Pause";
+                myUpdateController = setInterval(update, 100);
+                myPaused = false;
+            }
+
+            lastFrame = Date.now();
+        } else {
+            document.getElementById("stopWatch").innerHTML = "00 : 00 : 00 : 000";
+        }
+    }
+
+    //Update is called every 0.1 Second
+    function update() {
+        //added delta time to milli seconds
+        myMilliSeconds += deltatime();
+
+        //updating the text in html
+        myTime.innerHTML = timeConverter();
+
+        //This should be the last thing called. so it would be accurate.
+        lastFrame = Date.now();
+    }
+
+    //Calsulates deltatime. Mean time taken inbetween frames/call
+    function deltatime() {
+        return Date.now() - lastFrame;
+    }
+
+    function timeConverter() {
+        //1000 = 1 Second. 60000 = 1. minute 3600000 = 1 hour.
+        if (myMilliSeconds >= 1000) {
+            mySeconds++;
+            myMilliSeconds -= 1000;
+            if (mySeconds >= 60) {
+                myMinutes++;
+                mySeconds = 0;
+
+                if (myMinutes >= 60) {
+                    myHours++;
+                    myMinutes = 0;
+                }
+            }
+        }
+        //Using teranary operator to check if the value is single digit or not. so that we can justify the string.
+        return (myHours < 10 ? '0' + myHours : myHours) + " : " + (myMinutes < 10 ? '0' + myMinutes : myMinutes) + " : " + (mySeconds < 10 ? '0' + mySeconds : mySeconds) + " : " + (myMilliSeconds < 100 ? "0" + myMilliSeconds : myMilliSeconds);
+    }
+
+</script>
+
+</html>
