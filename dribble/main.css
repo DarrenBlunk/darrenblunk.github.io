@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica-neue, helvetica, arial;
+}
+
+
+/*Header Start*/
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 56px;
+    background-color: #333;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px 1.9rem;
+    font-size: 0.85rem;
+}
+
+.active {
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: #999;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+header a:active {
+    color: #fff;
+}
+
+.nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+/*Header left start here*/
+
+#nav-left-links {
+    width: 510px;
+}
+
+#nav-left-links>li {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+#nav-left-links li:first-child {
+    margin-right: 0.6rem;
+    height: 19px;
+    width: 76px;
+    background-image: url(resource/logo.png);
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+#nav-left-links li:first-child:hover {
+    opacity: 0.6;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+#nav-left-links li:last-child {
+    width: 22px;
+    height: 16px;
+    background-image: url(resource/dots.png);
+    opacity: 0.5;
+}
+
+#nav-left-links li:last-child:hover {
+    opacity: 1;
+}
+
+
+/*Header left end here*/
+
+#nav-right-links {
+    width: 350px;
+}
+
+#nav-right-links>li {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+#search-container {
+    background-color: white;
+    padding: 5px;
+    width: 210px;
+    border-radius: 4px;
+    display: flex;
+}
+
+#search-container :first-child {
+    background-image: url(resource/search.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#search-box::-webkit-input-placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+#search-box:-ms-input-placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+#search-box::placeholder {
+    color: #bbb;
+    font-weight: 500;
+}
+
+#search-box {
+    border-style: none;
+    width: 100%;
+    padding-left: 20px;
+    color: #bbb;
+}
+
+
+/*For removing close box in search*/
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+::selection {
+    background-color: #EA4B89;
+    color: white;
+}
+
+#search-box:focus {
+    outline: none;
+    color: #444;
+}
+
+
+/*Header Right start here*/
+
+
+/*Header End*/
+
+
+/*Secondary Header Start*/
+
+#miniJumbotron {
+    height: 98px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#miniJumbotron>p {
+    color: white;
+}
+
+#miniJumbotron>* {
+    margin-right: 4px;
+}
+
+#miniJumbotron> :nth-child(2) {
+    color: #999;
+    margin-right: 18px;
+}
+
+#learn-more {
+    border: none;
+    height: 38px;
+    width: 95px;
+    border-radius: 5px;
+    background-color: #999;
+    color: white;
+}
+
+#sign-up {
+    border: none;
+    height: 38px;
+    width: 74px;
+    border-radius: 5px;
+    color: white;
+    background: #ee6e9f;
+    background: #ee6e9f;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ee6e9f 46%, #d84578 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ee6e9f 46%, #d84578 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ee6e9f 46%, #d84578 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee6e9f', endColorstr='#d84578', GradientType=0);
+}
+
+
+/*End of Secondary header*/
+
+
+/* Sorter header Start*/
+
+#sort-section {
+    display: flex;
+    padding: 0px 22px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#sorter-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 32px;
+}
+
+#sorter-header>a {
+    text-decoration: none;
+    margin-right: 24px;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+#sorter-header>a>div {
+    padding-right: 22px;
+    background-image: url(resource/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#sorter-header>a:last-child {
+    margin-right: 0px;
+}
+#box-sorter-button {
+	 width: 17px;
+    height: 17px;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-sorter-button:hover {
+	background-color: #333;
+    border-radius: 4px;
+
+}
+#box-sorter-button > div {
+    width: 100%;
+    height: 100%;
+    background-image: url(resource/box-menu.png);
+    background-size: cover;
+}
+
+#box-sorter-button:hover {
+    background-position: bottom;
+}
