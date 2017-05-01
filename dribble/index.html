@@ -1,1044 +1,1110 @@
 <!DOCTYPE html>
 <html lang="">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="main.css">
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Dribble</title>
+	
+	<link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-    <header>
-        <div>
-            <ul id="nav-left-links" class="nav-links">
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li><a href="#" class="active">Shots</a></li>
-                <li><a href="#">Designers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Podcast</a></li>
-                <li><a href="#">Meetups</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li>
-                    <a href="#"></a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul id="nav-right-links" class="nav-links">
-                <li><a href="#">Sign up</a></li>
-                <li><a href="#">Sign in</a></li>
-                <li>
-                    <div id="search-container">
-                        <form><input type="search" placeholder="Search" id="search-box"> </form>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <section id="miniJumbotron">
-        <p>What are you working on?</p>
-        <p>Dribbble is show and tell for designers.</p>
-        <button id="learn-more">Learn more</button>
-        <button id="sign-up">Sign up</button>
-    </section>
-    <section id="sort-section">
-        <div id="sorter-header">
-            <a href="#">
-                <div>
-                    <p>Popular</p>
-                </div>
-            </a>
+<div id="mobileHeader">
+	<div id="menu-button"></div>
+	<a href="#"></a>
+	<a href="#">Sign in</a>
+</div>
+	<header id="Header" class="Hidden">
+	
+		<div>
+			<ul id="nav-left-links" class="nav-links">
+				<li><a href="#"></a></li>
+				<li><a href="#" class="active">Shots</a></li>
+				<li><a href="#">Designers</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Podcast</a></li>
+				<li><a href="#">Meetups</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">More</a></li>
+			</ul>
+		</div>
+		
+		<div>
+			<ul id="nav-right-links" class="nav-links">
+				<li><a href="#">Sign up</a></li>
+				<li><a href="#">Sign in</a></li>
+				<li>
+					<form>
+						<input type="search" placeholder="Search" id="search-box">
+					</form>
+				</li>
+			</ul>
+		</div>
+	</header>
+	
+	<section id="miniJumbotron">
+		<span>
+			<span>What are you working on?</span>
+        	<span>Dribbble is show and tell for designers.</span>
+		</span>
+        <span id="miniJumbotron-buttons">
+			<button id="learn-more">Learn more</button>
+			
+			<button id="sign-up">Sign up</button>
+		</span>
+	</section>
+	
+	<section id="sort-section">
+		<div id="sorter-header"><a href="#">
+			<div>
+				<p>Popular</p>
+			</div>
+			</a>
             <a href="">
-                <div>
-                    <p>Shots</p>
-                </div>
-            </a>
+				<div>
+					<p>Shots</p>
+				</div>
+			</a>
             <a href="">
-                <div>
-                    <p>Now</p>
-                </div>
-            </a>
-
-        </div>
-        <div id="box-sorter-button">
-            <div></div>
-        </div>
-    </section>
-
-    <section class="grid-container">
-<!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+				<div>
+					<p>Now</p>
+				</div>
+		</a></div>
+		
+		<div id="box-sorter-button">
+			<div></div>
+		</div>
+	</section>
+	
+	<section class="grid-container">
+		<!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-   <!--Card start-->
-        <div class="post-container">
-            <div class="card-container">
-                <div class="card-image" id="card1"></div>
-                <div class="card-buttons">
-                    <div class="align-left">
-                    </div>
-                    <div class="align-right">
-                        <a href="#" class="card-views">1,128</a>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+		
+		
+		   <!--Card start-->
+		        <div class="post-container">
+			<div class="card-container">
+				<div class="card-image" id="card1"></div>
+				
+				<div class="card-buttons">
+					<div class="align-left"></div>
+					
+					<div class="align-right"><a href="#" class="card-views">1,128</a>
                         <a href="#" class="card-comments">5</a>
-                        <a href="#" class="card-likes">124</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-person">
-                <div class="card-person-img"></div>
-                <div class="card-person-name">James Curran</div>
-            </div>
-        </div>
-<!--Card end-->
-
-
-
-    </section>
+                        <a href="#" class="card-likes">124</a></div>
+				</div>
+			</div>
+			
+			<div class="card-person">
+				<div class="card-person-img"></div>
+				
+				<div class="card-person-name">James Curran</div>
+			</div>
+		</div>
+		<!--Card end-->
+	</section>
+	<script  type="text/javascript">
+	var menuBar = false;
+	var menu = document.getElementById("Header");
+	
+	document.getElementById("menu-button").onclick = function(){
+	menuBar = !menuBar;
+		if(menuBar)
+		{
+			menu.classList.remove("Hidden");
+		}
+		else 
+		{
+			menu.classList.add("Hidden");
+		}	
+	}
+	
+	</script>
 </body>
-
 </html>
